@@ -1,0 +1,9 @@
+@mixin suscripcion {
+    border-radius: 5px;
+    background-color: $fondoSuscripcionLogin;
+    border: 2px solid #cacaca;
+}
+
+@mixin bgColor ($color) {
+    background-color: $color;
+}
