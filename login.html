@@ -3,6 +3,13 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Este es el sitio web en el que encontrarás zapatillas y sandalias para las mujeres más bellas."/>
+    <meta name="keywords"  content="ZAPATILLAS, SANDALIAS, ADIDAS, NIKE, PUMA"/>
+    <meta name="author" content="Andrea Opazo"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Así Como Eres"/>
+    <meta property="og:description" content="Sitio web de zapatillas femeninas."/>
+    <meta property="og:url" content="https://asicomoeres.000webhostapp.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link 
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" 
@@ -87,7 +94,7 @@
                 <div class="container">
                     <div class="row">
                         <form class="col-12">
-                            <h5>Iniciar sesión</h5>
+                            <h1 class="fontFormulario">Iniciar sesión</h1>
                             <hr/>
                             <div class="form-group">
                                 <label for="inputEmail1">Email(*)</label>
@@ -96,11 +103,12 @@
                                     class="form-control"
                                     id="inputEmail1"
                                     placeholder="nombre@ejemplo.com"
+                                    required
                                 />
                             </div>
                             <div class="form-group">
                                 <label for="inputPassword1">Contraseña(*)</label>
-                                <input type="password" class="form-control" id="inputPassword1" />
+                                <input type="password" class="form-control" id="inputPassword1" required/>
                             </div>
                             <div class="row container my-2">
                                 <div class="form-group form-check col-xs-12 col-sm-6 mb-2">
@@ -121,51 +129,51 @@
                 <div class="container">
                     <div class="row">
                         <form class="col-12">
-                            <h5>Registrate</h5>
+                            <h1 class="fontFormulario">Registrate</h1>
                             <hr/>
                             <div class="form-group">
-                                <label for="inputEmail2">Email(*)</label>
-                                <input
-                                    type="email"
+                                <label for="inputEmail2" class="form-label">Email(*)</label>
+                                <input type="email"
                                     class="form-control"
                                     id="inputEmail2"
                                     placeholder="nombre@ejemplo.com"
-                                />
+                                    aria-describedby="inputGroupPrepend2" 
+                                    required
+                                >
                             </div>
                             <div class="form-group">
                                 <label for="inputPassword2">Contraseña(*)</label>
-                                <input type="password" class="form-control" id="inputPassword2" />
+                                <input type="password" class="form-control" id="inputPassword2" required/>
                             </div>
-                            <div class="form-group">
-                                <label for="inputPassword3">Confirmar contraseña</label>
-                                <input type="password" class="form-control" id="inputPassword3" />
+                            <div class="form_group">
+                                <label for="inputPassword3" class="form-label">Confirmar contraseña(*)</label>
+                                <input type="password" class="form-control" id="inputPassword3" required/>
                             </div>
-                            <div class="form-group">
+                            <div class="form_group">
                                 <label for="nombre">Nombre</label>
-                                <input type="password" class="form-control" id="nombre" />
+                                <input type="text" class="form-control" id="nombre"/>
                             </div>
-                            <div class="form-group">
+                            <div class="form_group">
                                 <label for="apellido">Apellido</label>
-                                <input type="password" class="form-control" id="apellido" />
+                                <input type="text" class="form-control" id="apellido"/>
                             </div>
-                            <div class="form-group">
+                            <div class="form_group">
                                 <label for="documento">DNI</label>
-                                <input type="password" class="form-control" id="documento" />
+                                <input type="number" class="form-control" id="documento"/>
                             </div>
                             <div class="form-group">
                                 <label for="fechaNacimiento">Fecha de nacimiento</label>
-                                <input type="password" class="form-control" id="fechaNacimiento" />
+                                <input type="date" class="form-control" id="fechaNacimiento"/>
                             </div>
                             <div class="form-group mb-2">
                                 <label for="sexo">Sexo</label>
                                 <select class="form-select" aria-label="Default select example">
-                                    <option selected>Seleccione</option>
-                                    <option value="ninguno">--</option>
+                                    <option selected> Otro </option>
                                     <option value="masculino">Masculino</option>
                                     <option value="femenino">Femenino</option>
                                 </select>
                             </div>
-                            <div class="d-grid gap-1 col-3 mx-auto">
+                            <div class="form-group d-grid gap-1 col-3 mx-auto">
                                 <button type="submit" class="btn btn-primary btn-sm mb-2">Enviar</button>
                             </div>
                         </form>

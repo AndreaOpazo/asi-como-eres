@@ -5,13 +5,26 @@ article {
     }
 }
 
+.fontDestacados {
+    @include fontsize(large);
+    font-weight: bold;
+}
+
 /* Main Login */
 .bgMain {
     background-color: $fondoSuscripcionLogin;
+}
+
+.fontFormulario {
+    @include fontsize(x-large);
 }
 
 /* Main Secciones*/
 .padding {
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.fontMenuLateral {
+    @include fontsize(medium);
 }

@@ -30,17 +30,27 @@ div a:hover {
   background-color: #d8bfd8; }
 
 /* Main Index */
-article .article1:hover, article .article2:hover {
+article.article1:hover, article.article2:hover {
   transform: scale(1.01); }
+
+.fontDestacados {
+  font-size: large;
+  font-weight: bold; }
 
 /* Main Login */
 .bgMain {
   background-color: #FFCCBC; }
 
+.fontFormulario {
+  font-size: x-large; }
+
 /* Main Secciones*/
 .padding {
   padding-left: 0px;
   padding-right: 0px; }
+
+.fontMenuLateral {
+  font-size: medium; }
 
 footer section {
   border-radius: 5px;
