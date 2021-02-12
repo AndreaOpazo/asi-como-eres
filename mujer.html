@@ -95,23 +95,29 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
                         <li class="breadcrumb-item"><a href="mujer.html">Mujer</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Resultados de búsqueda (16)</li>
+                        <li class="breadcrumb-item active" aria-current="page">Resultados (16)</li>
                     </ol>
                 </nav>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-lg-3 my-2">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse bg-light my-2" id="navbarTogglerDemo01">
+                <nav class="navbar navbar-expand-lg navbar-light bg-md-light">
+                    <div class="container bg-light">
+                        <img 
+                            src="imagenes/filter.png" 
+                            class="navbar-toggler position-absolute bottom-100 end-0 bg-light"
+                            alt="filtro" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#navbarToggler" 
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        />
+                        <div class="collapse navbar-collapse bg-light my-2" id="navbarToggler">
                             <div class="container flex-column">
                                 <div class="row mx-auto">
                                     <div class="col-12 mb-3">
-                                        <label for="list_order">Ordenar por:</label>
+                                        <label for="list_order" class="fontMenuLateral">Ordenar por:</label>
                                         <select name="list_order">
                                             <option value="V">Más Vendidos</option>
                                             <option value="MN">Más Nuevo</option>
@@ -204,10 +210,9 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <ul class="list-group list-group-flush">
+                                            <label for="price" class="form-label fontMenuLateral">Precio</label>
                                             <li class="list-group-item">
-                                                <label for="price" class="form-label">Precio</label>
-                                                <input type="range" class="form-range" name="price" id="price" min="300" max="5000" step="2000" value="2300">
-                                                <output class="price-output" for="price"></output>
+                                                <input type="range" class="form-range" name="price" id="price" min="300" max="5000">
                                             </li>
                                         </ul>
                                     </div>
